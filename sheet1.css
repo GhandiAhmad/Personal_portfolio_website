@@ -1,0 +1,163 @@
+    * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0; background-color: rgb(196, 219, 111) ;}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fadee {
+  animation-name: fadee;
+  animation-duration: 1.5s;
+}
+
+@keyframes fadee {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.footer {
+  text-align: center; 
+  	position: fixed;
+background-color: orangered;
+height: 30px;
+left: 0px;
+right: 0px;
+top: 96%;
+z-index: 2;
+}
+
+.info {
+	float: left;
+background-color: rgb(180, 142, 142);
+margin-right: 30px;
+margin-bottom: 10px;
+width: 100%; 
+text-align: center;
+min-height: 100px;
+}
+.info:hover{
+background-color: rgb(114, 233, 203);
+font-size: 20pt;
+}
+.info:active{
+background-color: rgb(122, 122, 216);
+}
+#t1 .ca{
+	text-align: center;
+	font-size: 14pt;
+	font: bold;
+}
+
+.big { font-size: x-large; color: blue; } 
+.medium { font-size: medium;color: red; font-family: 'Franklin Gothic Medium', 'fantasy', sans-serif;} 
+
+
+.responsive
+{
+width: 100%;
+display: none;
+}
+ol.c {
+  list-style-type: upper-roman;
+  font-size: large;
+  font-family: Georgia,  Times;
+   color: rgb(79, 13, 141);
+}
+
+ul.b {
+  list-style-type: square;
+  font-size: large;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,Impact, 'Arial Narrow Bold', sans-serif;
+  color: rgb(21, 7, 151);
+}
+ul.a {
+  list-style-type: decimal;
+  font-size: large;
+  font-family:Impact,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, 'Arial Narrow Bold', sans-serif;
+  color: rgb(68, 4, 26);
+}
+
+ul.d {
+  list-style-type: lower-latin;
+  font-size: large;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', 'Arial Narrow Bold', sans-serif;
+  color: rgb(73, 46, 5);
+}
+
+html {
+  scroll-behavior: smooth;
+}

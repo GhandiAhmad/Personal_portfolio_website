@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghandi Ahmad</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="pattern.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="sheet1.css">
+</head>
+<body>
+  <section id="section1">
+    <h1 align="center" style="color: rgb(26, 56, 187); font-family: fantasy;">Ghandi's Projects</h1> 
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="Home.html"> Home</a>
+              <a class="navbar-brand" href="Projects.html">Projects</a>
+              <a class="navbar-brand" href="about me.html">About Me</a>
+              <a class="navbar-brand" href="contact.html">Contact</a>
+      </div>
+  </nav>
+        <h2 style="color: brown;font-family:cursive ;" class="container-fluid"><b><i>Age Calculation In Days</i></b> </h2> <p style="font-size: x-large; font-family:Geneva; color: rgb(212, 26, 26); font-weight: bold;" class="container-fluid">Do you want to calculate your age in days? 
+          <p style="font-size: large;" class="container-fluid">It's easy! Just set your Birthdate then click on <b>"Calculate my Age"</b>.</p> <p style="font-size:large;" class="container-fluid">HAPPY EXPERIENCE!</p> 
+        </p>
+        <script > today= new Date() </script>
+        <table class="table table-striped" align="center"  style="width:30%">
+          <th colspan="4" style="background-color: rgb(196, 219, 111); border: none;"> <img class="responsive" id="image" src="Congratulations.gif">
+          </th>
+          <tr >
+            <td colspan="4">
+                      <b> Enter Date of Birth: <input type=date id = DOB></b><br><br>
+            </td>
+          </tr>
+            <tr>
+                <th></th>
+                <th style="color: royalblue;">Day</th>
+                <th style="color: royalblue;">Month</th>
+                <th style="color: royalblue;">Year</th>            
+            </tr>
+                    <th style="color: rebeccapurple;">        Date Of Birth:
+                    <td><p id="day"></p></td>
+                    <td><p id="month"></p></td>
+                    <td><p id="year"></p></td>
+                    </th>
+                <tr><tr />
+                    <th style="color: rebeccapurple;">Today's Date:
+                    <td> <script >  document.write(today.getDate()) </script> </td>
+                    <td><script > document.write(today.getMonth()+1) </script></td>
+                    <td><script >  document.write(today.getFullYear()) </script></td>
+                </th>
+                <tr style="background-color: rgb(196, 219, 111); border: none;">
+                  <td colspan="4"><button onclick = "ageCalculation()" class="btn btn-primary" id="cong" > Calculate my Age </button>
+                  </td>
+                </tr>
+        </table>
+        <h3 id="result" align="center" style="font-weight: bold;color: blueviolet;"></h3>
+        <a href="#section2"><img src="down.png" alt="down" class="img-rounded"  align="Right" style="width: 40px; height:50px; margin-right: 20px;" />
+        </a>
+    </section>
+    <br><br><hr>
+  <section id="section2">
+      <h2 style="color: brown; font-family:cursive ;" class="container-fluid"><b><i>Using ANN and IP to Predict Dyeing Recipe and Fabric Colors</i></b> </h2>
+     <br />
+    <div class="predict_para" style="padding: 20px; font-weight: 900;">
+      <p>Color is the design element and the creative influence on which textile and fashion dyeing designers depend on in attracting the attention of the recipient and addressing him psychologically and emotionally.</p>
+      <p>The aim of this project is to determine the dye-staffs that will be applied and the concentrations of each of them to improve the color formulation step. Matlab software converts the images into color spaces <b><mark style="color: blueviolet; background-color: rgb(196, 219, 111);">(RGB, LAB, and HSV)</mark></b>, which represent ANN inputs, and ANN output represents dyeing recipe for dyeing of cotton fabrics. Thus reducing the waste of dyeing materials and saving time.</p>
+      <p>As for the second algorithm is to predict the color which will be obtained from dyeing recipe.</p>  
+       <video width="500px"; height="500px" style="margin-left: 31%" controls >
+        <source src="Final video.mp4" type="video/mp4">
+    </video></div>
+    <a href="#section1"><img src="up.png" alt="down" class="img-rounded"  align="Right" style="width: 40px; height:50px; margin-right: 20px;" />
+    </a>
+    <a href="#section3"><img src="down.png" alt="down" class="img-rounded"  align="Right" style="width: 40px; height:50px; margin-right: 20px;" />
+    </a>
+</section> <br><br><hr>
+<section id="section3">
+<h2 style="color: brown; font-family:cursive ;" class="container-fluid"><b><i>Gallery for Some Projects</i></b> </h2>
+<div class="slideshow-container">
+  <div class="mySlides fadee">
+    <div class="numbertext" style="color: rgb(2, 15, 5); font-weight: bold;">1 / 4</div>
+    <img src="image6.png" style="width:100%" class="  display: block; margin-left: auto; margin-right: auto;"></br></br></br>
+    <div class="text" style="color: rgb(110, 48, 6); font-weight: bold;">Prediction the Tenasity of Cotton Yarn</div>
+  </div>
+  <div class="mySlides fadee">
+    <div class="numbertext" style="color: rgb(2, 15, 5); font-weight: bold;">2 / 4</div>
+    <img src="image5.png" style="width:60%;margin-left: 20%" class="  display: block; margin-left: auto; margin-right: auto;"></br></br></br>
+    <div class="text" style="color: rgb(110, 48, 6); font-weight: bold;">Using IP & ANN to Determine the Diameter of Cotton Yarn</div>
+  </div>
+  <div class="mySlides fadee">
+    <div class="numbertext" style="color: rgb(2, 15, 5); font-weight: bold;">3 / 4</div>
+    <img src="image3.png" style="width:80% ; margin-left: 10%;"class="  display: block; margin-left: auto; margin-right: auto;"></br></br></br>
+    <div class="text" style="color: rgb(110, 48, 6); font-weight: bold;">Classification of Yarn Appearance</div>
+  </div>
+  <div class="mySlides fadee">
+      <div class="numbertext" style="color: rgb(2, 15, 5); font-weight: bold;">4/ 4</div>
+      <img src="image.png" style="width:60%;margin-left: 25%;" class="  display: block; margin-left: auto; margin-right: auto;"></br></br></br>
+      <div class="text" style="color: rgb(110, 48, 6); font-weight: bold;">Using IP & ANN to Predict the Color form Dyeing Recipe </div>
+  </div>
+  <a class="prev" onclick="plusSlides(-1)"><p style="color: rgb(40, 5, 85); font-weight: bold;">❮&#10094;</p></a>
+  <a class="next" onclick="plusSlides(1)"><p style="color: rgb(40, 5, 85); font-weight: bold;">❯&#10095;</p></a>
+  </div>
+  </br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+  </div>
+<a href="#section2"><img src="up.png" alt="down" class="img-rounded"  align="Right" style="width: 40px; height:50px; margin-right: 20px;" />
+</a>
+</section>
+<br /><br />
+</body>
+<script src="projectscript.js"></script>
+<footer class="footer">
+	All Rights Reseved <sup>(R)</sup> Ghandi Ahmad
+</footer>
+</html>
