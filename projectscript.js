@@ -51,3 +51,12 @@ function ageCalculation() {
     
 }
 
+///////
+function ale(){
+  if (document.SubmitForm.vorname.value == "" || 
+      document.SubmitForm.anrede.value == ""||
+      document.SubmitForm.nachname.value == ""||
+      document.SubmitForm.email.value == "") 
+          alert("You have to Complete Filling the Form!!");
+ else 
+          alert("Your request has been sent successfully")};

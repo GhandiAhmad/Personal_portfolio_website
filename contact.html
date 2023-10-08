@@ -54,7 +54,7 @@
 </br></br></br></br></br>
 <section id="section2">
     <div class="form-container">
-        <form method="post" >
+        <form method="post" name="SubmitForm">
              <table class="table-info" align="center"  style="width:50%">  
                 <caption style="color: brown;"> <h2><b><i>Request form</i></b></h2></caption>
                 <tr><td>Salutation*</td>
@@ -69,9 +69,9 @@
                 <tr><td>Comment</td><td><textarea name="bemerkung" cols="40" rows="10" placeholder="write your comment here!" maxlength="255" class="textarea form-control"></textarea></td></tr> 
                 <tr><td colspan="2"><p>* mandatory fields - please fill in</p></td></tr>
                 <tr><td><input type ="reset" value = "Reset Form" class="btn btn-info"/></td>
-                    <td> <input type ="submit" value = "Submit Form" class="btn btn-info" onclick="ale()"/></td></tr>
+                    <td> <input type ="submit"  value = "Submit Form" class="btn btn-info" onclick="ale()"/></td></tr>
             </table>
-            <script> function ale(){alert("Your request has been sent successfully")}</script>
+            <script src="projectscript.js"></script>
         </form>
     </div>
     <a href="#section1"><img src="up.png" alt="down" class="img-rounded"  align="Right" style="width: 40px; height:50px; margin-right: 20px;" />
